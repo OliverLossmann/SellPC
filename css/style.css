@@ -178,3 +178,12 @@ input[type=checkbox]:checked ~ .menu{
 
 }
 
+@media screen and (min-width: 678px) {
+
+  body {
+    background-image:url(https://a-static.besthdwallpaper.com/barbar-dator-tapet-2560x2048-16851_33.jpg);
+    background-size: cover;
+  }
+
+
+
