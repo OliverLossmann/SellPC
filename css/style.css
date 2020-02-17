@@ -183,7 +183,11 @@ input[type=checkbox]:checked ~ .menu{
   body {
     background-image:url(https://a-static.besthdwallpaper.com/barbar-dator-tapet-2560x2048-16851_33.jpg);
     background-size: cover;
-  }
 
+  }
+  p {
+    text-align: center;
+    color: lightblue;
+  }
 
 
