@@ -1,4 +1,180 @@
 
-hej hej
-branch css
+
+@media screen and (max-width: 678px) {
+  
+  .wrapper .offcan {
+  width:300px;
+  height:50px;
+}
+
+
+
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 35px;
+  color: black;
+}
+
+.wrapper {
+  font: 20px/200%  sans-serif;
+  overflow-x: hidden;
+  font-family: 'Calistoga';
+}
+
+section {
+  background-attachment: fixed;
+  position: fixed;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  margin-right:0;
+  background-image:url("https://wallpaperaccess.com/full/726364.jpg");
+  background-size: cover;
+  transition: margin 0.3s;
+}
+
+p {
+  margin-top: 80px;
+  font-size: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+  border: solid black;
+  color: black;
+  padding: 10px;
+  background-color: rgba(148, 147, 143, 0.5);
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu nav ul li {
+  display: block;
+  position:relative;
+  display: auto;
+  background-color: rgba(100,100,100,0.5);
+  width: 170px;
+  }
+
+.menu nav a {
+display: block;
+padding: 0 10px;
+color: #FFF;
+font-size: 20px;
+line-height: 60px;
+text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: black;
+}
+
+
+h1 {
+  margin-top: 170px;
+  font-size: 80px;
+  text-align: center;
+  color: black;
+}
+
+.menu {
+  margin-right: 23%;
+  top: 5px;
+  text-align: center;
+  position: fixed;
+  margin-left: -200px;
+  transition: margin 0.3s;
+  z-index:99;
+  border: solid black;
+}
+
+.menu nav ul {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  list-style: none;
+}
+
+input[type=checkbox] {
+  position: fixed;
+  opacity: 0;
+}
+
+.nav-toggle {
+  display: block;
+  position: absolute;
+  top: 20px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 99;
+  transition: margin 0.3s;
+  left: 20px;
+ 
+}
+
+
+.nav-toggle span {
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 40px;
+  transition: all 0.3s;
+  border-radius: 30px;
+}
+
+.nav-toggle span:nth-child(1) {
+  top: 10px;
+  background-color: black;
+  transform: rotate(-45deg);
+  margin-left: 13px;
+}
+
+
+.nav-toggle span:nth-child(5) {
+  top: -10px;
+  margin-left: -13px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+input[type=checkbox]:checked ~ .nav-toggle {
+  margin-left: 180px;
+}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(1) {
+   background-color: black;
+  top: 20px;
+  margin-left: 10px;
+  transform: rotate(45deg);
+}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2) {
+  display: none;
+}
+
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(3) {
+  display:none;
+  top: 6px;
+  transform: rotate(-45deg);
+}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(4){
+  display: none;
+}
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(5) {
+  background-color: black;
+ top:15px;
+  margin-left: -15px;
+ transform: rotate(-45deg);
+}
+
+input[type=checkbox]:checked ~ .menu{
+  margin-left: 5px;
+}
+
+}
 
