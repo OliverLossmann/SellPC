@@ -145,7 +145,7 @@
     cursor: pointer;
     z-index: 99;
     transition: margin 0.3s;
-    right: 10px;
+    right: 9px;
 
   }
 
@@ -172,6 +172,7 @@
   .nav-toggle span:nth-child(5) {
     background-color: white;
   }
+  
 
   input[type=checkbox]:checked~.nav-toggle {}
 
