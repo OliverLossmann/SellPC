@@ -19,6 +19,7 @@
 .color-menu {
   background-color: black;
   text-align: center;
+  height: 50px;
 
 }
 
@@ -40,7 +41,7 @@
   font-family: 'Calistoga';
 }
 
-section {
+body {
   background-attachment: fixed;
   position: fixed;
   width: 100%;
@@ -97,11 +98,10 @@ h1 {
 }
 
 .menu {
-  margin-right: 23%;
+  margin-left: 100%;
   top: 5px;
   text-align: center;
   position: fixed;
-  margin-left: -200px;
   transition: margin 0.3s;
   z-index:99;
   border: solid black;
@@ -120,14 +120,14 @@ input[type=checkbox] {
 }
 
 .nav-toggle {
+  top: 10px;
   display: block;
   position: absolute;
-  top: 10px;
   height: 32px;
   cursor: pointer;
   z-index: 99;
   transition: margin 0.3s;
-  right: 15px;
+  right: 10px;
  
 }
 
@@ -154,14 +154,13 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked ~ .nav-toggle {
-  margin-left: 180px;
+  margin-right: 180px;
 }
 
 input[type=checkbox]:checked ~ .nav-toggle span:nth-child(1) {
-   background-color: black;
-  top: 20px;
-  margin-left: 10px;
+  background-color: white;
   transform: rotate(45deg);
+  top: 10px;
 }
 
 input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2) {
@@ -171,7 +170,6 @@ input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2) {
 
 input[type=checkbox]:checked ~ .nav-toggle span:nth-child(3) {
   display:none;
-  top: 6px;
   transform: rotate(-45deg);
 }
 
@@ -179,14 +177,13 @@ input[type=checkbox]:checked ~ .nav-toggle span:nth-child(4){
   display: none;
 }
 input[type=checkbox]:checked ~ .nav-toggle span:nth-child(5) {
-  background-color: black;
- top:15px;
-  margin-left: -15px;
+  background-color: white;
  transform: rotate(-45deg);
+ top: 5px;
 }
 
 input[type=checkbox]:checked ~ .menu{
-  margin-left: 5px;
+  margin-left: 70%;
 }
 
 }
