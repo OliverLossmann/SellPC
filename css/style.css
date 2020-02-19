@@ -1,15 +1,13 @@
 * {
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 678px) {
+* {margin: 0; padding: 0;}
 
-  .wrapper .offcan {
-    width: auto;
-    height: auto;
-  }
+@media screen and (max-width: 768px) {
+
+ 
 
   .list-item1 {
     grid-area: search;
@@ -31,13 +29,13 @@
 
  .container {
   width: 89.5%;
-  margin: 5px auto;
+  margin: 0px auto;
   display: grid;
-  grid-template-columns: 5;
+  grid-template-columns: 10;
   grid-template-rows: repeat(1, minmax(50px, 1fr));
 
   grid-template-areas: 
-  "search account home cart .";
+  "search . account . home . cart . . .";
 }
 
 [class*=material-icons] {
@@ -47,77 +45,48 @@
 
   .color-menu {
     background-color: black;
+    height: auto;
     text-align: center;
-    height: 50px;
-
   }
 
  [class*="list-item"] {
-    display: inline-block;
-
-  }
-
-
-  .list a {
-    color: white;
-    margin: 5px;
-    font-size: 25px;
-  }
+  display: inline-block;
+}
 
 
-
-  .wrapper {
-    font: 20px/200% sans-serif;
-    overflow-x: hidden;
-    font-family: 'Calistoga';
-  }
 
   body {
     background-attachment: fixed;
-    position: fixed;
     width: 100%;
     overflow: auto;
     height: 100%;
-    margin-right: 0;
     background-image: url("https://a-static.besthdwallpaper.com/barbar-dator-tapet-2560x2048-16851_33.jpg");
     background-size: cover;
     transition: margin 0.3s;
   }
 
-  p {
-    margin-top: 80px;
-    font-size: 20px;
-    margin-right: 100px;
-    margin-left: 100px;
-    border: solid white;
-    color: white;
-    padding: 10px;
-    background-color: rgba(148, 147, 143, 0.5);
-    text-align: center;
-  }
+ 
 
   .menu ul {
     list-style: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
 
   }
 
-  .menu nav ul li {
-    display: block;
-    position: relative;
-    display: auto;
-    background-color: rgba(100, 100, 100, 0.5);
-    width: 170px;
+  .menu ul li {
+    padding: 5px 0 5px;
+  border-bottom: 1px solid white; 
+    margin: 5px 0 5px;
+    height: 50px;
+  }
+  .menu ul li a{
+    margin: 0 5px 0 5px;
     color: white;
   }
 
-  .menu nav a {
-    display: block;
-    padding: 0 10px;
-    color: #FFF;
-    font-size: 5px;
-    line-height: 60px;
-    text-decoration: none;
-  }
+
 
   .menu li:hover {
     background-color: gray;
@@ -125,33 +94,22 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .menu {
   margin-left: 100%;
-  top: 15%;
+  top: 55px;
   text-align: center;
   position: fixed;
   transition: margin 0.3s;
   z-index:99;
-  border: solid white;
+  border: 1px solid white;
+  width: 100%;
+  background-color: rgba(51, 51, 51, .7);
 }
 
-  h1 {
-    margin-top: 170px;
-    font-size: 80px;
-    text-align: center;
-    color: black;
-  }
 
-
-  .menu nav ul {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    list-style: none;
-  }
 
   input[type=checkbox] {
     position: fixed;
@@ -167,7 +125,6 @@ a {
     z-index: 99;
     transition: margin 0.3s;
     right: 15px;
-
   }
 
 
@@ -179,6 +136,10 @@ a {
     transition: all 0.3s;
     margin-top: 1px;
     margin-bottom: 1px;
+  }
+
+  .menu li:nth-child(7) {
+    border-bottom: none;
   }
 
 
@@ -226,15 +187,8 @@ a {
 
 
 input[type=checkbox]:checked ~ .menu{
-  margin-left: 75%;
-  top: 15%;}
-
-}
-  
-body {
-  background-image: url(https://a-static.besthdwallpaper.com/barbar-dator-tapet-2560x2048-16851_33.jpg);
-  background-size: cover;
-
+  margin-left: 0px;
+  top: 55px;
 }
 
 
@@ -273,6 +227,9 @@ h3 {
   letter-spacing: 1px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
-  color: #111;
+  text-align:center;
+  color: white;
+  padding-bottom: 25px; 
+  padding-top: 25px;
 }
 
