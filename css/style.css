@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  font-size: 35px;
-  color: white;
 }
 
 @media screen and (max-width: 678px) {
@@ -14,8 +11,38 @@
     height: auto;
   }
 
-.material-icons {
+  .list-item1 {
+    grid-area: search;
+  }
+  .list-item2{
+    grid-area: account;
+  }
+  .list-item3{
+    grid-area: home;
+  } 
+  .list-item4{
+    grid-area: cart;
+  }
+  
+  .home {
+    width: 50px;
+    color: white;
+  }
+
+ .container {
+  width: 89.5%;
+  margin: 5px auto;
+  display: grid;
+  grid-template-columns: 5;
+  grid-template-rows: repeat(1, minmax(50px, 1fr));
+
+  grid-template-areas: 
+  "search account home cart .";
+}
+
+[class*=material-icons] {
   color: white;
+  font-size: 40px;
 }
 
   .color-menu {
@@ -25,7 +52,7 @@
 
   }
 
-  .list-item {
+ [class*="list-item"] {
     display: inline-block;
 
   }
@@ -87,7 +114,7 @@
     display: block;
     padding: 0 10px;
     color: #FFF;
-    font-size: 20px;
+    font-size: 5px;
     line-height: 60px;
     text-decoration: none;
   }
@@ -96,6 +123,10 @@
     background-color: gray;
   }
 
+a {
+  text-decoration: none;
+  color: white;
+}
 
 .menu {
   margin-left: 100%;
@@ -104,7 +135,7 @@
   position: fixed;
   transition: margin 0.3s;
   z-index:99;
-  border: solid black;
+  border: solid white;
 }
 
   h1 {
@@ -114,16 +145,6 @@
     color: black;
   }
 
-  .menu {
-    margin-left: 100%;
-    top: 5px;
-    text-align: center;
-    position: fixed;
-    transition: margin 0.3s;
-    z-index: 99;
-    border: solid white;
-    top: 10%;
-  }
 
   .menu nav ul {
     padding: 0;
@@ -145,7 +166,7 @@
     cursor: pointer;
     z-index: 99;
     transition: margin 0.3s;
-    right: 9px;
+    right: 15px;
 
   }
 
@@ -156,11 +177,12 @@
     height: 5px;
     width: 40px;
     transition: all 0.3s;
+    margin-top: 1px;
+    margin-bottom: 1px;
   }
 
 
   .nav-toggle span:nth-child(1) {
-    top: 0;
     background-color: white;
   }
 
@@ -202,17 +224,12 @@
     top: 5px;
   }
 
-  input[type=checkbox]:checked~.menu {
-    margin-left: 75%;
-    top: 10%;
-  }
-
-}
-
 
 input[type=checkbox]:checked ~ .menu{
   margin-left: 75%;
-  top: 15%;
+  top: 15%;}
+
+}
   
 body {
   background-image: url(https://a-static.besthdwallpaper.com/barbar-dator-tapet-2560x2048-16851_33.jpg);
@@ -220,10 +237,6 @@ body {
 
 }
 
-p {
-  text-align: center;
-  color: blue;
-}
 
 
 .caption {
