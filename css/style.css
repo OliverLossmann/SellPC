@@ -14,7 +14,9 @@
   height:auto;
 }
 
-
+.material-icons {
+  color: white;
+}
 
 .color-menu {
   background-color: black;
@@ -27,6 +29,7 @@
   display: inline-block;
 
 }
+
 
 .list a {
   color: white;
@@ -99,7 +102,7 @@ h1 {
 
 .menu {
   margin-left: 100%;
-  top: 5px;
+  top: 15%;
   text-align: center;
   position: fixed;
   transition: margin 0.3s;
@@ -153,9 +156,6 @@ input[type=checkbox] {
   background-color: white;
 }
 
-input[type=checkbox]:checked ~ .nav-toggle {
-  margin-right: 180px;
-}
 
 input[type=checkbox]:checked ~ .nav-toggle span:nth-child(1) {
   background-color: white;
@@ -183,7 +183,8 @@ input[type=checkbox]:checked ~ .nav-toggle span:nth-child(5) {
 }
 
 input[type=checkbox]:checked ~ .menu{
-  margin-left: 70%;
+  margin-left: 75%;
+  top: 15%;
 }
 
 }
