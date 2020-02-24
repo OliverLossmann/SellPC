@@ -42,7 +42,6 @@ background-color: grey;
 position: relative;
 color: white;
 top: 110px;
-z-index: 100;
 text-align: center;
 padding: 10px 10px;
 width: 90%;
@@ -273,7 +272,7 @@ display: grid;
 margin: 100px auto;
 background-color: grey;
 grid-template-columns: ;
-grid-template-rows: repeat(3, minmax(200px, 1fr));
+grid-template-rows:;
 grid-template-areas:
 "item1 item2"
 "item3 item4"
@@ -282,11 +281,20 @@ grid-gap: 0% 0%;
 padding: 10px;
 }
 
-
-
-[class*="pc"] {
-  border: 1px solid black;
+button {
+  margin: auto 20px auto 20px; 
+  width: 50%;
+  height: 30px;
+  background-color: lightblue;
+  font-size: 18px;
 }
+
+p {
+  display: inline-block;
+  margin: auto 20px auto 20px;
+  font-size: 20px;
+}
+
 .footer {
   background-color: black;
 }
