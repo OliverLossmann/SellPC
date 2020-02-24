@@ -37,7 +37,17 @@ ul li ul.dropdown li{
 
 @media screen and (max-width: 768px) {
 
- 
+.col-75 {
+background-color: grey;
+position: relative;
+color: white;
+top: 110px;
+z-index: 100;
+text-align: center;
+padding: 10px 10px;
+width: 90%;
+margin: auto auto auto auto;
+}
 .list-item1 {
   grid-area: search;
 }
@@ -81,6 +91,9 @@ ul li ul.dropdown li{
   background-color: black;
   height: auto;
   text-align: center;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
 }
 
 [class*="list-item"] {
@@ -90,7 +103,7 @@ ul li ul.dropdown li{
 body {
   background-attachment: fixed;
   width: 100%;
-  overflow: scroll;
+  overflow: auto;
   height: 100%;
   background-image: url("https://a-static.besthdwallpaper.com/barbar-dator-tapet-2560x2048-16851_33.jpg");
   background-size: cover;
@@ -134,7 +147,7 @@ a {
   text-align: center;
   position: fixed;
   transition: margin 0.3s;
-  z-index:99;
+  z-index:110;
   border: 1px solid white;
   width: 100%;
   background-color: rgba(51, 51, 51, .7);
@@ -150,7 +163,7 @@ input[type=checkbox] {
 .nav-toggle {
   top: 5px;
   display: block;
-  position: absolute;
+  position: fixed;
   height: 32px;
   cursor: pointer;
   z-index: 99;
@@ -220,37 +233,70 @@ input[type=checkbox]:checked ~ .menu{
 
 
 
-.caption {
+.caption h1 {
   position: absolute;
-  left: 0;
-  top: 50%;
+  top:20px;
   width: 100%;
   text-align: center;
   color: white;
-  display: inline-block;
+  padding-top: 70px;
 }
 
-.caption span.border {
+.caption {
   background-color: rgba(51, 51, 51, .7);
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  position: relative;
+  top: auto;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
   display: inline-block;
 }
 
-.footer {
-  background-color: rgb(29, 29, 29);
-  width: 100%;
-  color: white;
-  text-align: center;
-  clear: both;
-  height: 10%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  display: inline-block;
+.item1 {grid-area: item1;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+.item2 {grid-area: item2;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+.item3 {grid-area: item3;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+.item4 {grid-area: item4;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+.item5 {grid-area: item5;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+.item6 {grid-area: item6;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+
+
+.box {
+width: 90%;
+position: relative;
+display: grid;
+margin: 100px auto;
+background-color: grey;
+grid-template-columns: ;
+grid-template-rows: repeat(3, minmax(200px, 1fr));
+grid-template-areas:
+"item1 item2"
+"item3 item4"
+"item5 item6";
+grid-gap: 0% 0%;
+padding: 10px;
 }
+
+
+
+[class*="pc"] {
+  border: 1px solid black;
+}
+.footer {
+  background-color: black;
+}
+
+.box img {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
 
 h3 {
   letter-spacing: 1px;
