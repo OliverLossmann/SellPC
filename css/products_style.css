@@ -256,7 +256,6 @@ input[type=checkbox]:checked ~ .menu{
 }
 
 .caption {
-  background-color: rgba(51, 51, 51, .7);
   position: relative;
   top: auto;
   width: 100%;
@@ -660,7 +659,7 @@ clear: both;
 height: 100%;
 left: 0;
 bottom: 0;
-font-size: 50px;
+font-size: 15px;
 }
 
 p {
@@ -677,7 +676,7 @@ p {
 h3 {
   letter-spacing: 1px;
   text-transform: uppercase;
-  font: 50px "Lato", sans-serif;
+  font: 30px "Lato", sans-serif;
   text-align:center;
   color: white;
   padding-bottom: 25px; 
