@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <title>Home SellPC</title>
+</head>
+<body class="background">
+
+
+    <nav class="color-menu">
+        <ul class="list">
+            <div class="container1">
+                <li class="list-item1"><i class="material-icons">search</i></li>
+                <li class="list-item2"><i class="material-icons">person</i></li>
+                <li class="list-item3"><img class="home" src="images/tesla.png"></li>
+                <li class="list-item4"><i class="material-icons">shopping_cart</i>
+                    <ul class="dropdown">
+                        <li class="list-img"><a><img src="images/tesla.png"></a></li>
+                        <li class="list-img"><a><img src="images/tesla.png"></a></li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+    </nav>
+
+    <input type="checkbox" id="nav-toggle">
+    <label class="nav-toggle" for="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- off canvas -->
+    <nav class="menu">
+        <ul class="nav-list">
+            <li class="nav-list_item"><a target="_blank" href="https://www.youtube.com" title="Home">Home</a></li>
+            <!--
+              -->
+            <li class="nav-list_item"><a target="_blank" href="https://www.google.com/?client=safari"
+                    title="About">Pre-built PCs</a></li>
+            <!--
+              -->
+            <li class="nav-list_item"><a target="_blank" href="https://www.youtube.com" title="Blog">Used PCs</a></li>
+            <!--
+              -->
+            <li class="nav-list_item"><a target="_blank" href="https://www.google.com/?client=safari"
+                    title="Contact">Build Your Own</a></li>
+            <li class="nav-list_item"><a target="_blank" href="https://www.google.com/?client=safari"
+                    title="Contact">Sell Parts</a></li>
+            <li class="nav-list_item"><a target="_blank" href="https://www.google.com/?client=safari"
+                    title="Contact">Contact</a></li>
+            <li class="nav-list_item"><a target="_blank" href="https://www.google.com/?client=safari"
+                    title="Contact">About</a></li>
+        </ul>
+    </nav>
+    </header>
+      <br>
+      <br>
+      <br>
+      <div class="container"><h1> Contact </h1>
+        <fieldset>
+        <form action="submition.html">
+          <div class="row">
+            <div class="box"><label for="fname">First Name:<b>*</b></label></div>
+            <div class="box2"><input type="name" id="cvalue" name="firstname" placeholder="Your name..." required></div>
+          </div>
+          <div class="row">
+            <div class="box"><label for="lname">Last Name:<b>*</b></label></div>
+            <div class="box2"><input type="name" id="cvalue" name="lastname" placeholder="Your last name..." required></div>
+          </div>
+          <div class="row">
+            <div class="box"><label for="lname">Email:<b>*</b></label></div>
+            <div class="box2"><input type="email" id="cvalue" name="email" placeholder="Your email..." required></div>
+          </div>
+          <div class="row">
+            <div class="box"><label for="department">Deartment:<b>*</b></label></div>
+            <div class="box2">
+              <select id="country" name="department">
+                <option value="support">Support</option>
+                <option value="economy">Economy</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="box"><label for="color">Select your favorite color:</label></div>
+              <div class="box2"><input type="color" name="color" required></div>
+            </div>
+            <div class="row">
+            <div class="box"><label for="file">Select a file:</label></div>
+              <div class="box2"><input type="file" name="myFile"></div>
+            </div>
+            <div class="row">
+            <div class="box"><label for="number">Select your age:</label></div>
+              <div class="box2"><input id="cvalue" type="number" name="quantity" min="1" max="99"></div>
+            </div>
+            <div class="row">
+            <div class="box"><label for="number">Select your gender:</label></div>
+                <div class="box2"><input type="radio" name="gender" value="male"> Male<br>
+                  <input type="radio" name="gender" value="female"> Female<br>
+                  <input type="radio" name="gender" value="other"> Other </div>
+            </div>
+            <div class="row">
+            <div class="box"><label for="range">How happy are you with the support:</label></div><br>
+              <div class="box2"><input type="range" name="points" min="0" max="10"></div>
+            </div>
+            <div class="row">
+            <div class="box"><label for="range">Telephone:<b>*</b></label></div>
+              <div class="box2"><input id="cvalue" type="tel" name="usrtel" required></div>
+            </div>
+          <div class="row">
+            <div class="box"><label for="subject">Subject:<b>*</b></label></div>
+            <div class="box4"><textarea id="subject" name="subject" placeholder="Write something..." required></textarea></div>
+          </div>
+          <div class="row"><input type="reset"></div>
+          <div class="row"><input type="submit" value="Submit"></div>
+          <address>
+          Contact us via mail here:<a href="mailto:oliver.lossmann@gmail.com?subject=Need help&body=Hello!" title="mymail"> info@sellpc.se</a><br> 
+          Also on phone:<a href="tel:+46736635973" title="myphone"> +393337066540</a>
+          <br>
+          You have our adress here:
+                  <div class="frame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.8476579392564!2d18.069153316071876!3d59.31880078165519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e4b5041d3d%3A0xa4c6b2a2f4f1d940!2sG%C3%B6tgatan%209%2C%20116%2046%20Stockholm!5e0!3m2!1ssv!2sse!4v1582644074822!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </address>
+        </form>
+        </fieldset>
+      </div>
+
+
+<footer class="footer">
+   <h3 style="text-align:center;color: white;padding-bottom: 25px; padding-top: 25px;">Contact us</h3>
+            Address:
+
+            Götgatan 9
+
+            Stockholm, Sweden<br>
+
+            Contact
+
+            e-mail: info@sellpc.se<br>
+
+            Phone: +393337066540<br>
+
+</footer>
+
+</body>
+</html>
