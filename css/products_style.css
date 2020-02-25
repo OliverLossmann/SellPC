@@ -8,6 +8,10 @@
   width: 50px;
 }
 
+.container li img {
+  background-color: white;
+}
+
 ul li ul.dropdown{
   display: none;
   position: fixed;
@@ -35,10 +39,11 @@ ul li ul.dropdown li{
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)  {
+
 
 .col-75 {
-background-color: grey;
+background-image: url("../images/bg3.jpg");
 position: relative;
 color: white;
 top: 110px;
@@ -104,9 +109,10 @@ body {
   width: 100%;
   overflow: auto;
   height: 100%;
-  background-image: url("https://a-static.besthdwallpaper.com/barbar-dator-tapet-2560x2048-16851_33.jpg");
+  background-image: url("../images/bg.png");
   background-size: cover;
   transition: margin 0.3s;
+  font: 400 15px/1.8 "Lato", sans-serif;
 }
 
  
@@ -230,15 +236,23 @@ input[type=checkbox]:checked ~ .menu{
   top: 55px;
 }
 
-
-
-.caption h1 {
-  position: absolute;
-  top:20px;
-  width: 100%;
+#filter {
+  height: 30px;
+  width: 100px;
   text-align: center;
+  font-size: 18px;
+   background-image: url(...);
+   margin-bottom: 10px;
+}
+
+.border {
   color: white;
-  padding-top: 70px;
+  text-align: center;
+  background-color: rgba(51, 51, 51, .7);
+  padding: 18px;
+  margin: auto 5% auto 5%;
+  font-size: 25px;
+  width: 90%;
 }
 
 .caption {
@@ -270,7 +284,7 @@ width: 90%;
 position: relative;
 display: grid;
 margin: 100px auto;
-background-color: grey;
+background-image: url("../images/bg3.jpg");
 grid-template-columns: ;
 grid-template-rows:;
 grid-template-areas:
@@ -282,21 +296,53 @@ padding: 10px;
 }
 
 button {
-  margin: auto 20px auto 20px; 
-  width: 50%;
-  height: 30px;
-  background-color: lightblue;
+  background-color: grey;
+  border: 1px solid black;
+  color: white;
+  width: 100%;
+  height: 32px;
   font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-p {
-  display: inline-block;
-  margin: auto 20px auto 20px;
+button:hover {
+ background-color: black;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 32px;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box p {
+ text-align: center;
+ color: white;
+ border: 1px solid black;
+ background-color:  rgb(29, 29, 29);
   font-size: 20px;
 }
 
 .footer {
-  background-color: black;
+  background-color: rgb(29, 29, 29);
+width: 100%;
+color: white;
+text-align: center;
+clear: both;
+height: 160px;
+left: 0;
+bottom: 0;
+}
+
+p {
+  font-size: 30px;
 }
 
 .box img {
@@ -314,5 +360,328 @@ h3 {
   color: white;
   padding-bottom: 25px; 
   padding-top: 25px;
+}
+}
+
+@media screen and (min-width: 768px)  {
+
+
+.col-75 {
+background-image: url("../images/bg3.jpg");
+position: relative;
+color: white;
+top: 110px;
+text-align: center;
+padding: 10px 10px;
+width: 90%;
+margin: auto auto auto auto;
+}
+.list-item1 {
+  grid-area: search;
+}
+.list-item2{
+  grid-area: account;
+}
+.list-item3{
+  grid-area: home;
+} 
+.list-item4{
+  grid-area: cart;
+}
+  
+.home {
+  width: 50px;
+  color: white;
+}
+
+.dropdown {
+  display: none;
+}
+
+
+.container {
+  width: 89.5%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 9;
+  grid-template-rows: repeat(1, minmax(20px, 1fr));
+
+  grid-template-areas: 
+  "search . account . home . cart . .";
+}
+
+[class*=material-icons] {
+  color: white;
+  font-size: 40px;
+}
+
+.color-menu {
+  background-color: black;
+  height: auto;
+  text-align: center;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+}
+
+[class*="list-item"] {
+  display: inline-block;
+}
+
+body {
+  background-attachment: fixed;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  transition: margin 0.3s;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+ 
+
+.menu ul {
+  list-style: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.menu ul li {
+  padding: 5px 0 5px;
+  border-bottom: 1px solid white; 
+  margin: 5px 0 5px;
+  height: 50px;
+}
+.menu ul li a{
+  margin: 0 5px 0 5px;
+  color: white;
+}
+
+
+
+.menu li:hover {
+  background-color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  margin-left: 100%;
+  top: 55px;
+  text-align: center;
+  position: fixed;
+  transition: margin 0.3s;
+  z-index:110;
+  border: 1px solid white;
+  width: 100%;
+  background-color: rgba(51, 51, 51, .7);
+}
+
+
+
+input[type=checkbox] {
+  position: fixed;
+  opacity: 0;
+}
+
+.nav-toggle {
+  top: 5px;
+  display: block;
+  position: fixed;
+  height: 32px;
+  cursor: pointer;
+  z-index: 99;
+  transition: margin 0.3s;
+  right: 5px;
+}
+
+
+.nav-toggle span {
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 35px;
+  transition: all 0.3s;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.menu li:nth-child(7) {
+  border-bottom: none;
+}
+
+.nav-toggle span:nth-child(1) {
+  background-color: white;
+}
+
+
+.nav-toggle span:nth-child(3) {
+  background-color: white;
+}
+
+.nav-toggle span:nth-child(5) {
+  background-color: white;
+}
+
+input[type=checkbox]:checked~.nav-toggle span:nth-child(1) {
+  background-color: white;
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+input[type=checkbox]:checked~.nav-toggle span:nth-child(2) {
+  display: none;
+}
+
+
+input[type=checkbox]:checked~.nav-toggle span:nth-child(3) {
+  display: none;
+  transform: rotate(-45deg);
+}
+
+input[type=checkbox]:checked~.nav-toggle span:nth-child(4) {
+  display: none;
+}
+
+input[type=checkbox]:checked~.nav-toggle span:nth-child(5) {
+  background-color: white;
+  transform: rotate(-45deg);
+  top: 5px;
+}
+
+
+input[type=checkbox]:checked ~ .menu{
+  margin-left: 0px;
+  top: 55px;
+}
+
+#filter {
+  text-align: center;
+  font-size: xx-large;
+   background-image: url(...);
+   margin-bottom: 10px;
+}
+
+.border {
+  color: white;
+  text-align: center;
+  background-color: rgba(51, 51, 51, .7);
+  padding: 18px;
+  margin: auto 5% auto 5%;
+  font-size: -webkit-xxx-large;
+  width: 90%;
+}
+
+.caption {
+  background-color: rgba(51, 51, 51, .7);
+  position: relative;
+  top: auto;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  display: inline-block;
+}
+
+.item1 {grid-area: item1;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+.item2 {grid-area: item2;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+.item3 {grid-area: item3;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+.item4 {grid-area: item4;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+.item5 {grid-area: item5;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+.item6 {grid-area: item6;border: 1px solid #333;
+margin: 10px 10px; background-color: white;}
+
+
+.box {
+width: 90%;
+position: relative;
+display: grid;
+margin: 100px auto;
+background-image: url("../images/bg3.jpg");
+grid-template-columns: ;
+grid-template-rows:;
+grid-template-areas:
+"item1 item2"
+"item3 item4"
+"item5 item6";
+grid-gap: 0% 0%;
+padding: 10px;
+}
+
+button {
+  background-color: grey;
+  border: 1px solid black;
+  color: white;
+  width: 100%;
+  height: auto;
+  font-size: xx-large;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+ background-color: black;
+  border: none;
+  color: white;
+  width: 100%;
+  height: auto;
+  font-size: xx-large;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box p {
+ text-align: center;
+ color: white;
+ border: 1px solid black;
+ background-color:  rgb(29, 29, 29);
+}
+
+.footer {
+  background-color: rgb(29, 29, 29);
+width: 100%;
+color: white;
+text-align: center;
+clear: both;
+height: 100%;
+left: 0;
+bottom: 0;
+font-size: 50px;
+}
+
+p {
+  font-size: -webkit-xxx-large;
+}
+
+.box img {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+
+h3 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font: 50px "Lato", sans-serif;
+  text-align:center;
+  color: white;
+  padding-bottom: 25px; 
+  padding-top: 25px;
+}
 }
 
