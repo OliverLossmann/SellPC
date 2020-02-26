@@ -1,7 +1,11 @@
 
-  body {
-    margin: 0px;
-  /* this is the settings of the content placement on the website */
+body {
+  background-attachment: fixed;
+background-image: url("../images/bg.png");
+background-size: cover;
+position: relative;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 fieldset {
@@ -9,6 +13,8 @@ fieldset {
   border: none;
   width: 90%;
   margin: 5% auto 5%;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 form {
@@ -16,12 +22,6 @@ form {
   margin: 5% auto 5%;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  /* border settings for widht and height */
-}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -29,6 +29,7 @@ input[type=text], select, textarea {
   border: 1px solid none;
   border-radius: 4px;
   resize: vertical;
+  color: grey;
   /* another setting for border in contact page */
 }
 
@@ -221,13 +222,7 @@ b {
 
 
 
-
-
-
-
-
 .background {
-font-family: 'Anton', sans-serif;
 background-image: url("../images/bg.png");
 background-attachment: fixed;
 background-size: cover;
@@ -241,70 +236,28 @@ color: white;
   overflow: hidden;
   text-align: center;
 }
+.caption {  
 
-
-
-
-  .footer {
-  background-color: rgb(29, 29, 29);
-  width: 100%;
-  position: initial;
-  color: white;
-  text-align: center;
-  clear: both;
-  height: 160px;
-  left: 0;
-  bottom: 0;
-
-  }
-
-
-h1 {
 text-align: center;
-color: white;
 background-color: rgba(51, 51, 51, .7);
+color: #fff;
 padding: 18px;
-width: 90%;
-margin: 5% auto 5%;
-/* this is the settings for the captions */
+font-size: 25px;
 }
 
-h2 {
-text-align: center;
-color: lightgreen;
-border: 2px solid green;
-/* this is the settings for the captions */
-}
-
-h3 {
-text-align: center;
+footer {
+background-color: #282E34;
+width: 100%;
+position: initial;
 color: white;
-/* this is the settings for the captions */
-}
-
-h4 {
 text-align: center;
-color: lightgreen;
-border: 2px solid green;
-/* this is the settings for the captions */
+clear: both;
+height: 160px;
+left: 0;
+bottom: 0;
 }
 
-p {
-text-align: left;
-color: orange;
-background-color: gray;
-/* this is the settings for the text with tag <p> (paraghrap) */
-}
 
-#p1 {
-text-align: right;
-color: green;
-/* this is the settings for the text with tag <p> specifically with id p1 */
-}
-
-#subject {
-  height: 200px;
-}
 
 .clearfix:after {
   content: "";
@@ -312,249 +265,110 @@ color: green;
   clear: both;
 }
 
+* {
+  font: 400 15px/1.8 "Lato", sans-serif;
+  padding:0;
+  margin: 0;
+}
 
- /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-
-
-.dropdown li a img {
-  width: 50px;
+body {
+  height: 100%;
 }
 
 
 
-ul li ul.dropdown{
-  display: none;
-  position: fixed;
-  z-index: 999;
-  margin-left: 15px;
-  width: 100px;
-  height: 100px;
+.navbar-brand img {
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  margin: 5px 20px 20px 20px;
 }
 
-ul li:hover ul.dropdown{
-  display: block;
-}
-      
-ul li ul.dropdown li{
-  display: block;
+.navbar-brand {
+  padding: 0;
 }
 
-.dropdown {
-  background-color: rgba(51, 51, 51, .7);
-}
-
-.dropdown li:hover {
-  background-color: grey;
- }
-
-
-
-.col-75 {
-background-image: url("../images/bg3.jpg");
-position: relative;
-color: white;
-top: 110px;
-text-align: center;
-padding: 10px 10px;
-width: 90%;
-margin: auto auto auto auto;
-}
-.list-item1 {
-  grid-area: search;
-}
-.list-item2{
-  grid-area: account;
-}
-.list-item3{
-  grid-area: home;
-} 
-.list-item4{
-  grid-area: cart;
-}
-  
-.home {
-  width: 50px;
-  color: white;
-  margin-top: 10px;
-}
-
-.dropdown {
-  display: none;
-}
-
-
-.container1 {
-  width: 89.5%;
-  margin: 0px auto;
-  display: grid;
-  grid-template-columns: 9;
-  grid-template-rows: repeat(1, minmax(20px, 1fr));
-
-  grid-template-areas: 
-  "search . account . home . cart . .";
-}
-
-[class*=material-icons] {
-  color: white;
-  font-size: 40px;
-  margin-top: 15px;
-}
-
-.color-menu {
+.navbar {
+  border-radius: 0;
   background-color: black;
-  height: auto;
-  text-align: center;
-  z-index: 99;
-  position: fixed;
-  width: 100%;
+  margin-bottom: 0;
 }
-
-[class*="list-item"] {
-  display: inline-block;
-}
-
-
- 
-
-.menu ul {
-  list-style: none;
-  padding-right: 20px;
-  padding-left: 20px;
-  width: 100%;
-}
-
-.menu ul li {
-  padding: 5px 0 5px;
-  border-bottom: 1px solid white; 
-  margin: 5px 0 5px;
-  height: 50px;
-}
-.menu ul li a{
-  margin: 0 5px 0 5px;
-  color: white;
-}
-
-
-
-.menu li:hover {
-  background-color: gray;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.menu {
-  margin-left: 100%;
-  top: 55px;
-  text-align: center;
-  position: fixed;
-  transition: margin 0.3s;
-  z-index:110;
-  border: 1px solid white;
-  width: 100%;
+.row h3 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: rgba(51, 51, 51, .7);
+color: #fff;
+padding: 18px;
+font-size: 25px;
+letter-spacing: 10px;
 }
 
-
-
-input[type=checkbox] {
-  position: fixed;
-  opacity: 0;
+.row h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(51, 51, 51, .7);
+color: #fff;
+padding: 18px;
+font-size: 25px;
+letter-spacing: 10px;
 }
 
-.nav-toggle {
-  display: block;
-  position: fixed;
-  height: 32px;
-  cursor: pointer;
-  z-index: 99;
-  margin-top: 5px;
-  transition: margin 0.3s;
-  right: 5px;
+.col-sm-3{
+  border: 1px solid black;
+  padding: 15px;
+text-align: center;
+color: white;
+position: static;
 }
 
+.img-responsive {
+opacity: 0.8;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100%;
+width: 100%;
+}
 
-.nav-toggle span {
+.row {
   position: relative;
-  display: block;
-  height: 5px;
-  width: 35px;
-  transition: all 0.3s;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  text-align: center;
 }
 
-.menu li:nth-child(7) {
-  border-bottom: none;
+button {
+  margin-left: 20px;
 }
 
-.nav-toggle span:nth-child(1) {
-  background-color: white;
+.row1 {
+  position: relative;
+  text-align: center;
 }
 
-
-.nav-toggle span:nth-child(3) {
-  background-color: white;
+.col-sm-4 {
+  position: static;
 }
+/* henrys code */
 
-.nav-toggle span:nth-child(5) {
-  background-color: white;
-}
-
-input[type=checkbox]:checked~.nav-toggle span:nth-child(1) {
-  background-color: white;
-  transform: rotate(45deg);
-  top: 10px;
-}
-
-input[type=checkbox]:checked~.nav-toggle span:nth-child(2) {
-  display: none;
-}
-
-
-input[type=checkbox]:checked~.nav-toggle span:nth-child(3) {
-  display: none;
-  transform: rotate(-45deg);
-}
-
-input[type=checkbox]:checked~.nav-toggle span:nth-child(4) {
-  display: none;
-}
-
-input[type=checkbox]:checked~.nav-toggle span:nth-child(5) {
-  background-color: white;
-  transform: rotate(-45deg);
-  top: 5px;
-}
-
-
-input[type=checkbox]:checked ~ .menu{
-  margin-left: 0px;
-  top: 55px;
+.img-responsive1 {
+opacity: 0.8;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+width: 100%;
 }
 
 
 
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    margin-top: 0;
-   }
- /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+.pc {
+  width: 50px;
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
 
