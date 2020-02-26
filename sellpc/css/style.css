@@ -1,0 +1,501 @@
+* {
+
+  box-sizing: border-box;
+}
+
+* {margin: 0; padding: 0;}
+
+
+  .dropdown li a img {
+    width: 50px;
+  }
+
+
+
+
+ul li ul.dropdown{
+       /* Set width of the dropdown */
+        display: none;
+        position: fixed;
+        z-index: 999;
+        margin-left: 15px;
+        width: 100px;
+        height: 100px;
+    }
+
+     ul li:hover ul.dropdown{
+        display: block; /* Display the dropdown */
+    }
+      ul li ul.dropdown li{
+        display: block;
+    }
+
+
+
+    .dropdown {
+      background-color: rgba(51, 51, 51, .7);
+    }
+
+  .dropdown li:hover {
+    background-color: grey;
+  }
+
+
+
+
+  .list-item1 {
+    grid-area: search;
+  }
+  .list-item2{
+    grid-area: account;
+  }
+  .list-item3{
+    grid-area: home;
+  } 
+  .list-item4{
+    grid-area: cart;
+  }
+  
+  .home {
+    width: 50px;
+    color: white;
+  }
+
+.dropdown {
+  display: none;
+}
+
+
+ .container {
+  width: 89.5%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 9;
+  grid-template-rows: repeat(1, minmax(20px, 1fr));
+
+  grid-template-areas: 
+  "search . account . home . cart . .";
+}
+
+[class*=material-icons] {
+  color: white;
+font-size: 40px !important; 
+}
+
+  .color-menu {
+    background-color: black;
+    height: auto;
+    text-align: center;
+  }
+
+ [class*="list-item"] {
+  display: inline-block;
+}
+
+  .menu ul {
+    list-style: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+
+  }
+
+  .menu ul li {
+    padding: 5px 0 5px;
+  border-bottom: 1px solid white; 
+    margin: 5px 0 5px;
+    height: 50px;
+  }
+  .menu ul li a{
+    margin: 0 5px 0 5px;
+    color: white;
+  }
+
+
+
+  .menu li:hover {
+    background-color: gray;
+  }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  margin-left: 100%;
+  top: 55px;
+  text-align: center;
+  position: fixed;
+  transition: margin 0.3s;
+  z-index:99;
+  border: 1px solid white;
+  width: 100%;
+  background-color: rgba(51, 51, 51, .7);
+}
+
+
+
+  input[type=checkbox] {
+    position: fixed;
+    opacity: 0;
+  }
+
+  .nav-toggle {
+    top: 5px;
+    display: block;
+    position: absolute;
+    height: 32px;
+    cursor: pointer;
+    z-index: 99;
+    transition: margin 0.3s;
+    right: 5px;
+  }
+
+
+  .nav-toggle span {
+    position: relative;
+    display: block;
+    height: 5px;
+    width: 35px;
+    transition: all 0.3s;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  .menu li:nth-child(7) {
+    border-bottom: none;
+  }
+
+
+  .nav-toggle span:nth-child(1) {
+    background-color: white;
+  }
+
+
+  .nav-toggle span:nth-child(3) {
+    background-color: white;
+  }
+
+  .nav-toggle span:nth-child(5) {
+    background-color: white;
+  }
+  
+
+  input[type=checkbox]:checked~.nav-toggle {}
+
+  input[type=checkbox]:checked~.nav-toggle span:nth-child(1) {
+    background-color: white;
+    transform: rotate(45deg);
+    top: 10px;
+  }
+
+  input[type=checkbox]:checked~.nav-toggle span:nth-child(2) {
+    display: none;
+  }
+
+
+  input[type=checkbox]:checked~.nav-toggle span:nth-child(3) {
+    display: none;
+    transform: rotate(-45deg);
+  }
+
+  input[type=checkbox]:checked~.nav-toggle span:nth-child(4) {
+    display: none;
+  }
+
+  input[type=checkbox]:checked~.nav-toggle span:nth-child(5) {
+    background-color: white;
+    transform: rotate(-45deg);
+    top: 5px;
+  }
+
+
+input[type=checkbox]:checked ~ .menu{
+  margin-left: 0px;
+  top: 55px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url(../images/bg.png);
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url(../images/bg2.jpg);
+  min-height: 600px;
+}
+
+.bgimg-3 {
+  background-image: url(../images/bg3.jpg);
+  min-height: 600px;
+}
+
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: rgba(51, 51, 51, .7);
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+  .bgimg-1,
+  .bgimg-2 {
+      background-attachment: scroll;
+  }
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url(../images/bg.png);
+
+  /* Set a specific height */
+  min-height: 1000px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.footer {
+  background-color: rgb(29, 29, 29);
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  clear: both;
+  height: 160px;
+  left: 0;
+bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+  background-color: rgb(29, 29, 29);
+  width: 100%;
+  position: initial;
+  color: white;
+  text-align: center;
+  clear: both;
+  height: 160px;
+  left: 0;
+  bottom: 0;
+}
+}
+
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 99;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  margin-top: 7px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(51, 51, 51, .2);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgba(51, 51, 51, .2);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgba(51, 51, 51, .2);
+}
+
+@keyframes slidy {
+  0% {
+      left: 0%;
+  }
+
+  20% {
+      left: 0%;
+  }
+
+  25% {
+      left: -100%;
+  }
+
+  45% {
+      left: -100%;
+  }
+
+  50% {
+      left: -200%;
+  }
+
+  70% {
+      left: -200%;
+  }
+
+  75% {
+      left: -300%;
+  }
+
+  95% {
+      left: -300%;
+  }
+
+  100% {
+      left: -400%;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+div#slider {
+  width: 100%;
+  max-width: 1920px;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+div#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+}
+
+div.gallery:hover {
+  border: 1px solid rgba(51, 51, 51);;
+
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  background-color: #282E34;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+      width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
