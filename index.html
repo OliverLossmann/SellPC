@@ -1,174 +1,100 @@
 <!DOCTYPE html>
-<html>
-<title>Home</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <meta charset="UTF-8">
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
 
-
-    <nav class="color-menu">
-        <ul class="list">
-            <div class="container">
-                <li class="list-item1"><i class="material-icons">search</i></li>
-                <li class="list-item2"><i class="material-icons">person</i></li>
-                <li class="list-item3"><img class="home" src="images/tesla.png"></li>
-                <li class="list-item4"><i class="material-icons">shopping_cart</i>
-                    <ul class="dropdown">
-                        <li class="list-img"><a><img src="images/tesla.png"></a></li>
-                        <li class="list-img"><a><img src="images/tesla.png"></a></li>
-                    </ul>
-                </li>
-            </div>
-        </ul>
-    </nav>
-
-    <input type="checkbox" id="nav-toggle">
-    <label class="nav-toggle" for="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-
-    <!-- off canvas -->
-    <nav class="menu">
-        <ul class="nav-list">
-            <li class="nav-list_item"><a target="_blank" href="https://www.youtube.com" title="Home">Home</a></li>
-            <!--
-              -->
-            <li class="nav-list_item"><a target="_blank" href="https://www.google.com/?client=safari"
-                    title="About">Pre-built PCs</a></li>
-            <!--
-              -->
-            <li class="nav-list_item"><a target="_blank" href="https://www.youtube.com" title="Blog">Used PCs</a></li>
-            <!--
-              -->
-            <li class="nav-list_item"><a target="_blank" href="https://www.google.com/?client=safari"
-                    title="Contact">Build Your Own</a></li>
-            <li class="nav-list_item"><a target="_blank" href="https://www.google.com/?client=safari"
-                    title="Contact">Sell Parts</a></li>
-            <li class="nav-list_item"><a target="_blank" href="https://www.google.com/?client=safari"
-                    title="Contact">Contact</a></li>
-            <li class="nav-list_item"><a target="_blank" href="https://www.google.com/?client=safari"
-                    title="Contact">About</a></li>
-        </ul>
-    </nav>
-    </header>
-
-
-    <div class="bgimg-1">
-        <div class="caption">
-            <span class="border">Scroll Down</span>
-        </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand"><img src="images/tesla.png"></a>
     </div>
-
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-        <h3 style="text-align:left;color: white;padding-bottom: 25px;">About us</h3>
-        <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in eros id libero mattis ultricies. Nam nec elit aliquam, venenatis ipsum et, sollicitudin sem. Donec eget turpis felis. Integer in tortor elit. Ut sit amet arcu nec ex venenatis consequat vel eget urna. Donec sodales et massa mollis faucibus. Proin felis eros, faucibus eget scelerisque volutpat, blandit a massa. Nunc ut ante dolor. Etiam pulvinar, felis hendrerit eleifend fringilla, ante augue placerat quam, quis congue nisi augue viverra nisi. Cras tincidunt malesuada nisi, a porttitor leo sollicitudin nec. Morbi magna odio, condimentum id dignissim vitae, ornare eget nunc. Quisque at purus eget massa varius condimentum semper eget nisl. Pellentesque dignissim dignissim erat, non congue lorem volutpat sed. Aenean turpis nisi, feugiat sit amet posuere sit amet, vehicula nec diam.</pstyle="text-align:center;">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+        </li>
+        <li><a href="#">Pre-Built PC's</a></li>
+        <li><a href="#">Used PC's</a></li>
+        <li><a href="#">Build Your Own</a></li>
+        <li><a href="#">Sell Parts</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up/Log In</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="material-icons">shopping_cart</i>2<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><img class="pc" src="images/pc.jpg">1500£</li>
+            <li><a href="#"><img class="pc" src="images/pc.jpg">1500£</li>
+            <li><a>Total: 3000£</a></li>
+            <button type="button"><a>View in cart</a></button>
+          </ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
     </div>
-
-    <div class="bgimg-2">
-        <div class="caption">
-            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CUSTOM PCS</span>
-        </div>
-    </div>
-
-    <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-            <h3 style="text-align:left;color: white;padding-bottom: 25px;">Pick & Choose your parts</h3>
-            <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in eros id libero mattis ultricies. Nam nec elit aliquam, venenatis ipsum et, sollicitudin sem. Donec eget turpis felis. Integer in tortor elit. Ut sit amet arcu nec ex venenatis consequat vel eget urna. Donec sodales et massa mollis faucibus. Proin felis eros, faucibus eget scelerisque volutpat, blandit a massa. Nunc ut ante dolor. Etiam pulvinar, felis hendrerit eleifend fringilla, ante augue placerat quam, quis congue nisi augue viverra nisi. Cras tincidunt malesuada nisi, a porttitor leo sollicitudin nec. Morbi magna odio, condimentum id dignissim vitae, ornare eget nunc. Quisque at purus eget massa varius condimentum semper eget nisl. Pellentesque dignissim dignissim erat, non congue lorem volutpat sed. Aenean turpis nisi, feugiat sit amet posuere sit amet, vehicula nec diam.
-            </p>
-        </div>
-    </div>
+  </div>
+</nav>
 
 
-    <div id="slider">
-        <figure>
-            <img src="images/slide1.jpg" alt>
-            <img src="images/slide2.jpg" alt>
-            <img src="images/slide3.jpg" alt>
-            <img src="images/slide4.jpg" alt>
-            <img src="images/slide5.jpg" alt>
-        </figure>
-    </div>
+<div class="row">
+    <img class="img-responsive" src="images/bg.png" alt="Pc">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"><h3>Scroll Down</h3></div>
+    <div class="col-sm-4"></div>
+</div>
 
+<div class="row">
+    <div class="col-sm-12" style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"><h1 style="text-align:left;color: white;padding-bottom: 25px;">ABOUT US</h1><p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in eros id libero mattis ultricies. Nam nec elit aliquam, venenatis ipsum et, sollicitudin sem. Donec eget turpis felis. Integer in tortor elit. Ut sit amet arcu nec ex venenatis consequat vel eget urna. Donec sodales et massa mollis faucibus. Proin felis eros, faucibus eget scelerisque volutpat, blandit a massa. Nunc ut ante dolor. Etiam pulvinar, felis hendrerit eleifend fringilla, ante augue placerat quam, quis congue nisi augue viverra nisi. Cras tincidunt malesuada nisi, a porttitor leo sollicitudin nec. Morbi magna odio, condimentum id dignissim vitae, ornare eget nunc. Quisque at purus eget massa varius condimentum semper eget nisl. Pellentesque dignissim dignissim erat, non congue lorem volutpat sed. Aenean turpis nisi, feugiat sit amet posuere sit amet, vehicula nec diam.</p></div></div>
 
-    <div style="position:relative;">
-        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-            <h3 style="text-align:left;color: white;padding-bottom: 25px;">Buy used PC</h3>
+<div class="row">
+    <img class="img-responsive" src="images/bg2.jpg" alt="Pc">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"><h2>COSTUM PC'S</h2></div>
+    <div class="col-sm-4"></div>
+</div>
 
-            <p style="font-size: 18px;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in eros id libero mattis ultricies. Nam nec elit aliquam, venenatis ipsum et, sollicitudin sem. Donec eget turpis felis. Integer in tortor elit. Ut sit amet arcu nec ex venenatis consequat vel eget urna. Donec sodales et massa mollis faucibus. Proin felis eros, faucibus eget scelerisque volutpat, blandit a massa. Nunc ut ante dolor. Etiam pulvinar, felis hendrerit eleifend fringilla, ante augue placerat quam, quis congue nisi augue viverra nisi. Cras tincidunt malesuada nisi, a porttitor leo sollicitudin nec. Morbi magna odio, condimentum id dignissim vitae, ornare eget nunc. Quisque at purus eget massa varius condimentum semper eget nisl. Pellentesque dignissim dignissim erat, non congue lorem volutpat sed. Aenean turpis nisi, feugiat sit amet posuere sit amet, vehicula nec diam.</p>
+<div class="row">
+    <div class="col-sm-12" style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"><h1 style="text-align:left;color: white;padding-bottom: 25px;">PICK & CHOOSE YOUR PARTS</h1><p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in eros id libero mattis ultricies. Nam nec elit aliquam, venenatis ipsum et, sollicitudin sem. Donec eget turpis felis. Integer in tortor elit. Ut sit amet arcu nec ex venenatis consequat vel eget urna. Donec sodales et massa mollis faucibus. Proin felis eros, faucibus eget scelerisque volutpat, blandit a massa. Nunc ut ante dolor. Etiam pulvinar, felis hendrerit eleifend fringilla, ante augue placerat quam, quis congue nisi augue viverra nisi. Cras tincidunt malesuada nisi, a porttitor leo sollicitudin nec. Morbi magna odio, condimentum id dignissim vitae, ornare eget nunc. Quisque at purus eget massa varius condimentum semper eget nisl. Pellentesque dignissim dignissim erat, non congue lorem volutpat sed. Aenean turpis nisi, feugiat sit amet posuere sit amet, vehicula nec diam.</p></div></div>
 
+<div class="row">
+    <img class="img-responsive" src="images/slide4.jpg" alt="Pc">
+</div>
 
-            <br>
-            <h3 style="text-align:left;color: white;padding-bottom: 25px;">Sell your PC parts</h3>
-            <p style="font-size: 18px;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in eros id libero mattis ultricies. Nam nec elit aliquam, venenatis ipsum et, sollicitudin sem. Donec eget turpis felis. Integer in tortor elit. Ut sit amet arcu nec ex venenatis consequat vel eget urna. Donec sodales et massa mollis faucibus. Proin felis eros, faucibus eget scelerisque volutpat, blandit a massa. Nunc ut ante dolor. Etiam pulvinar, felis hendrerit eleifend fringilla, ante augue placerat quam, quis congue nisi augue viverra nisi. Cras tincidunt malesuada nisi, a porttitor leo sollicitudin nec. Morbi magna odio, condimentum id dignissim vitae, ornare eget nunc. Quisque at purus eget massa varius condimentum semper eget nisl. Pellentesque dignissim dignissim erat, non congue lorem volutpat sed. Aenean turpis nisi, feugiat sit amet posuere sit amet, vehicula nec diam.</p>
-        </div>
-    </div>
-    <div class="bgimg-3">
-        <div class="caption">
+<div class="row">
+    <div class="col-sm-12" style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"><h1 style="text-align:left;color: white;padding-bottom: 25px;">BUY USED PC'S</h1><p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in eros id libero mattis ultricies. Nam nec elit aliquam, venenatis ipsum et, sollicitudin sem. Donec eget turpis felis. Integer in tortor elit. Ut sit amet arcu nec ex venenatis consequat vel eget urna. Donec sodales et massa mollis faucibus. Proin felis eros, faucibus eget scelerisque volutpat, blandit a massa. Nunc ut ante dolor. Etiam pulvinar, felis hendrerit eleifend fringilla, ante augue placerat quam, quis congue nisi augue viverra nisi. Cras tincidunt malesuada nisi, a porttitor leo sollicitudin nec. Morbi magna odio, condimentum id dignissim vitae, ornare eget nunc. Quisque at purus eget massa varius condimentum semper eget nisl. Pellentesque dignissim dignissim erat, non congue lorem volutpat sed. Aenean turpis nisi, feugiat sit amet posuere sit amet, vehicula nec diam.</p></div></div>
 
-        </div>
-        <div class="responsive">
-            <div class="gallery">
-                <a target="_new" href="images/suit1.jpg">
-                    <img src="images/suit1.jpg" alt="RandomPC" width="600" height="400">
-                </a>
-                <div class="desc">Hand Crafted Custom PC<br>
+<div class="row">
+    <div class="col-sm-12" style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;"><h1 style="text-align:left;color: white;padding-bottom: 25px;">SELL PC PARTS</h1><p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in eros id libero mattis ultricies. Nam nec elit aliquam, venenatis ipsum et, sollicitudin sem. Donec eget turpis felis. Integer in tortor elit. Ut sit amet arcu nec ex venenatis consequat vel eget urna. Donec sodales et massa mollis faucibus. Proin felis eros, faucibus eget scelerisque volutpat, blandit a massa. Nunc ut ante dolor. Etiam pulvinar, felis hendrerit eleifend fringilla, ante augue placerat quam, quis congue nisi augue viverra nisi. Cras tincidunt malesuada nisi, a porttitor leo sollicitudin nec. Morbi magna odio, condimentum id dignissim vitae, ornare eget nunc. Quisque at purus eget massa varius condimentum semper eget nisl. Pellentesque dignissim dignissim erat, non congue lorem volutpat sed. Aenean turpis nisi, feugiat sit amet posuere sit amet, vehicula nec diam.</p></div></div>
 
-                    269£</div>
-            </div>
-        </div>
+<div class="row1">
+    <div class="col-sm-3"><a target="_blank" href="https://www.google.com/?client=safari"><img src="images/slide1.JPG"><p>Hand Crafted Costum PC</p>
+        <p>299£</p></a></div>
+    <div class="col-sm-3"><a target="_blank" href="https://www.google.com/?client=safari"><img src="images/slide1.JPG"><p>Hand Crafted Costum PC</p>
+        <p>299£</p></a></div>
+    <div class="col-sm-3"><a target="_blank" href="https://www.google.com/?client=safari"><img src="images/slide1.JPG"><p>Hand Crafted Costum PC</p>
+        <p>299£</p></a></div>
+    <div class="col-sm-3"><a target="_blank" href="https://www.google.com/?client=safari"><img src="images/slide1.JPG"><p>Hand Crafted Costum PC</p>
+        <p>299£</p></a></div>
+</div>
+ <img class="img-responsive1" src="images/bg3.jpg" alt="Pc">
 
-
-        <div class="responsive">
-            <div class="gallery">
-                <a target="_new" href="images/suit2.jpg">
-                    <img src="images/suit2.jpg" alt="RandomPC" width="600" height="400">
-                </a>
-                <div class="desc">Hand Crafted Custom PC<br>
-
-                    299£</div>
-            </div>
-        </div>
-
-        <div class="responsive">
-            <div class="gallery">
-                <a target="_new" href="images/suit3.jpg">
-                    <img src="images/suit3.jpg" alt="RandomPC" width="600" height="400">
-                </a>
-                <div class="desc">Hand Crafted Custom PC<br>
-
-                    299£</div>
-            </div>
-        </div>
-
-        <div class="responsive">
-            <div class="gallery">
-                <a target="_new" href="images/suit4.jpg">
-                    <img src="images/suit4.jpg" alt="RandomPC" width="600" height="400">
-                </a>
-                <div class="desc">Bespoke Custom Tailored PC<br>
-
-                    1500£</div>
-            </div>
-        </div>
-
-        <div class="clearfix"></div>
-
-
-        <div class="footer">
-            <h3 style="text-align:center;color: white;padding-bottom: 25px; padding-top: 25px;">Contact us</h3>
+<div class="row">
+    <div class="col-sm-12">
+        <h1>Contact us</h1>
             Address:
 
             Götgatan 9
@@ -180,11 +106,10 @@
             e-mail: info@sellpc.se<br>
 
             Phone: +393337066540<br>
-
-        </div>
-
+    </div>
+</div>
 
 
 </body>
-
 </html>
+
