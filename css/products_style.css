@@ -4,6 +4,33 @@
   margin: 0;
 }
 
+body {
+  background-attachment: fixed;
+background-image: url("../images/bg.png");
+background-size: cover;
+position: relative;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.row2 img {
+  width: 200px;
+} 
+
+.row2{
+  width: 90%;
+   margin: 100px auto;
+  color: white; 
+    padding-bottom: 62.5%; 
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+background-image: url("../images/bg3.jpg");
+}
+
+
+
 
 .navbar-brand img {
   width: 40px;
@@ -31,6 +58,25 @@ padding: 18px;
 font-size: 25px;
 }
 
+.box {
+  padding-bottom: 10px;
+}
+
+.col-sm-4 a {
+  padding-left: 10px;
+}
+
+.col-sm-4 p {
+  text-align: left;
+  padding-left: 10px;
+  width: 60%;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+.col-sm-4 button {
+  border: 1px solid black;
+}
 
 button {
   margin-left: 20px;
