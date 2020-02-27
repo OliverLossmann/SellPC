@@ -19,8 +19,8 @@ ul li ul.dropdown{
         position: fixed;
         z-index: 999;
         margin-left: 15px;
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 150px;
     }
 
      ul li:hover ul.dropdown{
